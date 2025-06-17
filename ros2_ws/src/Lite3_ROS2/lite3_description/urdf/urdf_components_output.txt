@@ -1,0 +1,59 @@
+Links:
+imu_link
+base
+TORSO
+INERTIA
+FL_HIP
+FL_THIGH
+FL_SHANK
+FL_FOOT
+FR_HIP
+FR_THIGH
+FR_SHANK
+FR_FOOT
+HL_HIP
+HL_THIGH
+HL_SHANK
+HL_FOOT
+HR_HIP
+HR_THIGH
+HR_SHANK
+HR_FOOT
+
+Joints:
+{'name': 'imu_joint', 'type': 'fixed', 'parent': 'TORSO', 'child': 'imu_link'}
+{'name': 'floating_base', 'type': 'fixed', 'parent': 'base', 'child': 'TORSO'}
+{'name': 'Torso2Inertia', 'type': 'fixed', 'parent': 'TORSO', 'child': 'INERTIA'}
+{'name': 'FL_HipX', 'type': 'revolute', 'parent': 'TORSO', 'child': 'FL_HIP'}
+{'name': 'FL_HipY', 'type': 'revolute', 'parent': 'FL_HIP', 'child': 'FL_THIGH'}
+{'name': 'FL_Knee', 'type': 'revolute', 'parent': 'FL_THIGH', 'child': 'FL_SHANK'}
+{'name': 'FL_Ankle', 'type': 'fixed', 'parent': 'FL_SHANK', 'child': 'FL_FOOT'}
+{'name': 'FR_HipX', 'type': 'revolute', 'parent': 'TORSO', 'child': 'FR_HIP'}
+{'name': 'FR_HipY', 'type': 'revolute', 'parent': 'FR_HIP', 'child': 'FR_THIGH'}
+{'name': 'FR_Knee', 'type': 'revolute', 'parent': 'FR_THIGH', 'child': 'FR_SHANK'}
+{'name': 'FR_Ankle', 'type': 'fixed', 'parent': 'FR_SHANK', 'child': 'FR_FOOT'}
+{'name': 'HL_HipX', 'type': 'revolute', 'parent': 'TORSO', 'child': 'HL_HIP'}
+{'name': 'HL_HipY', 'type': 'revolute', 'parent': 'HL_HIP', 'child': 'HL_THIGH'}
+{'name': 'HL_Knee', 'type': 'revolute', 'parent': 'HL_THIGH', 'child': 'HL_SHANK'}
+{'name': 'HL_Ankle', 'type': 'fixed', 'parent': 'HL_SHANK', 'child': 'HL_FOOT'}
+{'name': 'HR_HipX', 'type': 'revolute', 'parent': 'TORSO', 'child': 'HR_HIP'}
+{'name': 'HR_HipY', 'type': 'revolute', 'parent': 'HR_HIP', 'child': 'HR_THIGH'}
+{'name': 'HR_Knee', 'type': 'revolute', 'parent': 'HR_THIGH', 'child': 'HR_SHANK'}
+{'name': 'HR_Ankle', 'type': 'fixed', 'parent': 'HR_SHANK', 'child': 'HR_FOOT'}
+
+Meshes:
+{'link': 'TORSO', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/Lite3.dae'}
+{'link': 'FL_HIP', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/FL_HIP.dae'}
+{'link': 'FL_THIGH', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/l_thigh.dae'}
+{'link': 'FL_SHANK', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/SHANK.dae'}
+{'link': 'FR_HIP', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/FR_HIP.dae'}
+{'link': 'FR_THIGH', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/r_thigh.dae'}
+{'link': 'FR_SHANK', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/SHANK.dae'}
+{'link': 'HL_HIP', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/HL_HIP.dae'}
+{'link': 'HL_THIGH', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/l_thigh.dae'}
+{'link': 'HL_SHANK', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/SHANK.dae'}
+{'link': 'HR_HIP', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/HR_HIP.dae'}
+{'link': 'HR_THIGH', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/r_thigh.dae'}
+{'link': 'HR_SHANK', 'mesh_file': 'file:///home/tlab-uav/ros2_ws/install/lite3_description/share/lite3_description/meshes/SHANK.dae'}
+
+Materials:

@@ -1,0 +1,43 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    use_sim_time: true
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    leg_position_controller:
+      type: position_controllers/JointGroupPositionController
+
+leg_position_controller:
+  ros__parameters:
+    joints:
+      - FL_HipX
+      - FL_HipY
+      - FL_Knee
+      - FR_HipX
+      - FR_HipY
+      - FR_Knee
+      - HL_HipX
+      - HL_HipY
+      - HL_Knee
+      - HR_HipX
+      - HR_HipY
+      - HR_Knee
+
+    gains:
+      FL_HipX: {p: 20.0, i: 0.0, d: 0.1}
+      FL_HipY: {p: 20.0, i: 0.0, d: 0.1}
+      FL_Knee: {p: 20.0, i: 0.0, d: 0.1}
+
+      FR_HipX: {p: 20.0, i: 0.0, d: 0.1}
+      FR_HipY: {p: 20.0, i: 0.0, d: 0.1}
+      FR_Knee: {p: 20.0, i: 0.0, d: 0.1}
+
+      HL_HipX: {p: 20.0, i: 0.0, d: 0.1}
+      HL_HipY: {p: 20.0, i: 0.0, d: 0.1}
+      HL_Knee: {p: 20.0, i: 0.0, d: 0.1}
+
+      HR_HipX: {p: 20.0, i: 0.0, d: 0.1}
+      HR_HipY: {p: 20.0, i: 0.0, d: 0.1}
+      HR_Knee: {p: 20.0, i: 0.0, d: 0.1}

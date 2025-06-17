@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<robot name="lite3" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="body.xacro"/>
+  <xacro:include filename="perception.xacro"/>
+
+</robot>
